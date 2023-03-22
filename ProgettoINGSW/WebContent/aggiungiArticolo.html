@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Registrazione</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/aggiungiprodotto.css">
+		<link rel="stylesheet" type="text/css" href="css/animation.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="wrapper" style="background-image: url(Images/Product/background.png);">
+			<div class="inner border  animated bounceInRight">
+
+			<form name="formadd" method="post" action="http://localhost:8080/ProgettoSiw/AggiungiArticoli" OnSubmit="return ControllaFormAggiungi(this)">
+					<h3><i class="fa fa-plus" aria-hidden="true"></i> AGGIUNGI UN NUOVO ARTICOLO </h3>
+
+					<div class="form-wrapper">
+						<input type="text" placeholder="Codice a barre" name="campoid" class="form-control" maxlength="25">
+					</div>
+
+          <select name="campomarca" id="" class="form-control">
+            <option value="" disabled selected>Marca</option>
+            <option value="Adidas">Adidas</option>
+            <option value="Nike">Nike</option>
+            <option value="Jordan">Jordan</option>
+            <option value="Asics">Asics</option>
+            <option value="Puma">Puma</option>
+          </select>
+
+					<select name="camposesso" id="" class="form-control" onchange="CambiaSelectCategoria()">
+						<option value="" disabled selected>Sesso</option>
+						<option value="0">Maschile</option>
+						<option value="1">Femminile</option>
+					</select>
+
+					<select name="campocategoria" id="" class="form-control" onchange="CambiaSelectTaglia()">
+						<option value="" disabled selected>Categoria</option>
+					</select>
+
+      	<div class="form-wrapper">
+					<select name="campocolore" id="" class="form-control">
+						<option value="" disabled selected>Colore</option>
+						<option value="Rosso">Rosso</option>
+						<option value="Bordeaux">Bordeaux</option>
+						<option value="Viola">Viola</option>
+						<option value="Rosa">Rosa</option>		
+						<option value="Arancione">Arancione</option>
+						<option value="Giallo">Giallo</option>
+						<option value="Verde">Verde</option>
+						<option value="Blu">Blu</option>
+						<option value="Celeste">Celeste</option>
+						<option value="Nero">Nero</option>
+						<option value="Grigio">Grigio</option>
+					    <option value="Bianco">Bianco</option>
+					    <option value="Mimetico">Mimetico</option>
+						</select>
+
+					<div class="form-wrapper">
+					<select name="campotaglia" id="" class="form-control">
+							<option value="" disabled selected>Taglia</option>
+							</select>
+
+					<div class="form-wrapper">
+						<i class="fa fa-eur" aria-hidden="true"></i>
+						<input type="text" placeholder="Prezzo" name="campoprezzo" class="form-control" maxlength="12">
+					</div>
+
+					</div>
+				</div>
+
+         <input type="submit" value="AGGIUNGI ARTICOLO" style="float:right;">
+
+			</form>
+		</div>
+	</body>
+	
+   <script type="text/javascript" src="js/controlloCampi.js"></script>
+</html>

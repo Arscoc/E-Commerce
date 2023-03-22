@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Registrazione</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/registrati.css">
+		<link rel="stylesheet" type="text/css" href="css/animation.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="wrapper" style="background-image: url(Images/Registration/2.jpg);">
+			<div class="inner border  animated zoomIn">
+
+			<form name="form1" method="post" action="http://localhost:8080/ProgettoSiw/IscriviUtenti"  OnSubmit="return ControllaFormRegistrazione(this)">
+					<h3><i class="fa fa-pencil" aria-hidden="true"></i> Compila i seguenti dati </h3>
+
+					<div class="form-group">
+						<input type="text" placeholder="Nome" name="camponome" class="form-control" maxlength="25">
+						<input type="text" placeholder="Cognome" name="campocognome" class="form-control" maxlength="25">
+					</div>
+
+					<div class="form-wrapper">
+						<input type="text" placeholder="Codice fiscale" name="campocf"  class="form-control" style="text-transform: uppercase;" maxlength="16">
+						<i class="zmdi zmdi-email"></i>
+					</div>
+
+					<div class="form-wrapper">
+						<select name="camposesso" id="" class="form-control">
+							<option value="" disabled selected>Sesso</option>
+							<option value="donna">Donna</option>
+							<option value="uomo">Uomo</option>
+						</select>
+
+					<div class="form-wrapper">
+						<i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+						<input type="text" placeholder="Numero di telefono" name="camponumero" class="form-control" maxlength="12">
+					</div>
+
+
+					<div class="form-wrapper">
+						<i class="fa fa-envelope-o fa-lg" aria-hidden="true" maxlength="25"></i>
+						<input type="text" placeholder="Email" name="campoemail"class="form-control">
+					</div>
+
+					</div>
+
+					<div class="form-wrapper">
+						<i class="fa fa-lock fa-lg" aria-hidden="true" maxlength="15"></i>
+						<input type="password" placeholder="Password" name="campopassword"  class="form-control">
+					</div>
+
+					<div class="form-wrapper">
+						<i class="fa fa-lock fa-lg" aria-hidden="true" maxlength="15"></i>
+						<input type="password" placeholder="Conferma Password" name="campopassword2"  class="form-control">
+					</div>
+
+					<div class="form-wrapper">
+						<select name="campotipo" id="" class="form-control">
+							<option value="" disabled selected>Tipo di utente</option>
+							<option value="amministratore">Amministratore</option>
+							<option value="cliente">Cliente</option>
+						</select>
+				</div>
+
+         <input type="submit" value="REGISTRATI" style="float:right;">
+         *Se la pagina si ricarica l'email o il codice fiscale inserito è già presente nei nostri database.
+
+				</form>
+		</div>
+	</body>
+			
+	<script type="text/javascript" src="js/controlloCampi.js"></script>
+</html>

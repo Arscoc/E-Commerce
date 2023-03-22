@@ -1,0 +1,97 @@
+body 
+{
+  color: #232f3e;
+  font-weight: bold;
+}
+
+a:focus, a:hover 
+{
+    color: #fdbf14;
+    text-decoration: underline;
+}
+
+a 
+{
+    color: white;
+    text-decoration: none;
+}
+
+input, textarea, select,button
+{
+  border-radius: 5px;
+}
+
+.wrapper 
+{
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center; 
+}
+
+.inner
+{
+  padding: 5px;
+  background: #232f3e;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.inner input::placeholder
+{
+	color: white;
+}
+
+.inner form {
+    padding-left: 45px;
+    padding-right: 45px; 
+    padding-top: 40px;
+}
+
+.inner h3 
+{
+    font-weight: bold;
+    margin-bottom: 28px
+}
+
+.form-wrapper {
+  position: relative; 
+}
+
+.form-wrapper i  {
+  position: absolute;
+  bottom: 9px;
+  right: 0; 
+}
+
+input::placeholder
+{
+	colore: red;
+}
+
+.form-control 
+{
+	
+  border: 1px solid #fdbf14;
+  border-right: none;
+  border-left: none;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 25px; 
+  }
+
+.carousel-inner > .item
+{
+  min-height: 500px;
+  background-size: cover;
+  background-position: top top;
+  border-radius: 20px;
+}
+
+.btn-default {
+    color: white;
+    background-color: #fdbf14;
+    border-color: #fdbf14;
+}

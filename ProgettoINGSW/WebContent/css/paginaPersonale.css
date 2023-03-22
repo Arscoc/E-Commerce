@@ -1,0 +1,66 @@
+body, .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control
+{
+	background-color: #232f3e;
+}
+
+.nav-tabs>li>a:hover 
+{
+    color: #232f3e;
+}
+
+h1,h4,.nav-tabs>li>a
+{
+  color: #fdbf14;
+  font-weight: bold;
+}
+
+.form-control
+{
+  border: 1px solid #fdbf14;
+  border-right: none;
+  border-left: none;
+  padding: 0;
+  margin-bottom: 25px;
+  background-color: #232f3e;
+  color: white;
+}
+
+button
+{
+  background-color: #fdbf14;
+  color: #232f3e;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+{
+    background-color: #fdbf14;
+    color: #232f3e;
+    border: none;
+    border-bottom: none;
+}
+
+
+.btn-group-lg>.btn, .btn-lg 
+{
+background-color: transparent; 
+color: #fdbf14; 
+border-color: white;
+}
+
+.btn-group-lg>.btn, .btn-xs
+{
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent; 
+    color: #fdbf14; 
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+
+.btn.focus, .btn:focus, .btn:hover 
+{
+    background-color: #fdbf14;
+    border: none;
+}
